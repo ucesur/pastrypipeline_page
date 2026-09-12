@@ -84,7 +84,7 @@ a { color: var(--strawberry-deep); }
   font-weight: 700;
   font-size: 1.3rem;
 }
-.brand .logo {
+.brand {
   width: 40px;
   height: 40px;
   border-radius: 12px;
@@ -94,6 +94,15 @@ a { color: var(--strawberry-deep); }
   font-size: 22px;
   box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.08);
 }
+
+  .logo {
+   flex: 0 0 auto;
+   width: 58px; height: 58px; border-radius: 16px;
+   display: grid; place-items: center; font-size: 30px;
+   background: var(--bg); border: 2px solid var(--line);
+   overflow: hidden; padding: 9px;
+ }
+ .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .nav-links {
   display: flex;
   gap: 8px;
